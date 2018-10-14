@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Game of Thrones.ttf">
+            <string>GameofThrones</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W28-JI-ru4" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choose your alliance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z8-Mw-dyS">
+                                        <rect key="frame" x="8" y="91.5" width="359" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="AUv-xI-Muk"/>
+                                            <constraint firstAttribute="width" constant="359" id="TfP-qu-eBf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8Z8-Mw-dyS" firstAttribute="centerY" secondItem="W28-JI-ru4" secondAttribute="centerY" id="dPd-BY-QHp"/>
+                                    <constraint firstItem="8Z8-Mw-dyS" firstAttribute="centerX" secondItem="W28-JI-ru4" secondAttribute="centerX" id="kkm-Ie-Hus"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-f8-PZc" userLabel="Middle Container">
+                                <rect key="frame" x="0.0" y="222.5" width="375" height="222.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rk0-SM-7zf">
+                                        <rect key="frame" x="8" y="8" width="359" height="206.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rk0-SM-7zf" firstAttribute="centerY" secondItem="XQM-f8-PZc" secondAttribute="centerY" id="2cZ-UC-07q"/>
+                                    <constraint firstItem="rk0-SM-7zf" firstAttribute="top" secondItem="XQM-f8-PZc" secondAttribute="top" constant="8" id="J2s-Ve-HNK"/>
+                                    <constraint firstItem="rk0-SM-7zf" firstAttribute="centerX" secondItem="XQM-f8-PZc" secondAttribute="centerX" id="TLL-Bd-El2"/>
+                                    <constraint firstItem="rk0-SM-7zf" firstAttribute="leading" secondItem="XQM-f8-PZc" secondAttribute="leading" constant="8" id="akE-j5-69T"/>
+                                    <constraint firstAttribute="bottom" secondItem="rk0-SM-7zf" secondAttribute="bottom" constant="8" id="lS4-M9-HmH"/>
+                                    <constraint firstAttribute="trailing" secondItem="rk0-SM-7zf" secondAttribute="trailing" constant="8" id="rHV-nt-Fvz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNq-z9-ggH" userLabel="Bottom Container">
+                                <rect key="frame" x="0.0" y="445" width="375" height="222"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-rJ-OBT">
+                                        <rect key="frame" x="122" y="94.5" width="131" height="33"/>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="17"/>
+                                        <state key="normal" title="Select now">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiZ-Ck-GjQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ChW-rJ-OBT" firstAttribute="centerY" secondItem="rNq-z9-ggH" secondAttribute="centerY" id="20u-O3-igw"/>
+                                    <constraint firstItem="ChW-rJ-OBT" firstAttribute="centerX" secondItem="rNq-z9-ggH" secondAttribute="centerX" id="tjm-we-qn8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W28-JI-ru4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Qy-Sh-vyG"/>
+                            <constraint firstItem="W28-JI-ru4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bo2-ZI-wd6"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="height" secondItem="W28-JI-ru4" secondAttribute="height" id="FOX-Df-CQY"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ggz-Gf-Gnh"/>
+                            <constraint firstItem="XQM-f8-PZc" firstAttribute="top" secondItem="W28-JI-ru4" secondAttribute="bottom" id="PKw-g7-DOc"/>
+                            <constraint firstItem="XQM-f8-PZc" firstAttribute="top" secondItem="W28-JI-ru4" secondAttribute="bottom" id="PMd-EH-d4e"/>
+                            <constraint firstItem="XQM-f8-PZc" firstAttribute="height" secondItem="W28-JI-ru4" secondAttribute="height" id="Qxx-Kf-UAG"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="top" secondItem="XQM-f8-PZc" secondAttribute="bottom" id="bgr-iN-y9J"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="duM-EO-M1I"/>
+                            <constraint firstItem="XQM-f8-PZc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ma9-TW-mlj"/>
+                            <constraint firstItem="XQM-f8-PZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="myf-BY-k3x"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tZn-tH-7lH"/>
+                            <constraint firstItem="W28-JI-ru4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wEo-CT-rn4"/>
+                            <constraint firstItem="rNq-z9-ggH" firstAttribute="top" secondItem="XQM-f8-PZc" secondAttribute="bottom" id="xUd-Kd-OOS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="centerImage" destination="rk0-SM-7zf" id="nWH-5N-4oN"/>
+                        <outlet property="chooseButton" destination="ChW-rJ-OBT" id="Me2-LP-Cy2"/>
+                        <outlet property="topLabel" destination="8Z8-Mw-dyS" id="kZ3-bv-XmE"/>
+                        <segue destination="pCU-0L-GbT" kind="show" identifier="selectionScreen" id="Fjh-5D-vCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Hue-hN-K6d">
+            <objects>
+                <viewController storyboardIdentifier="selectionScreen" id="pCU-0L-GbT" customClass="SecondViewController" customModule="Game_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="42Z-Iv-ilK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJR-v7-Wp3" userLabel="Top Left Container">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="333"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCa-xc-HMq">
+                                        <rect key="frame" x="43.5" y="116" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="eDv-IS-75H"/>
+                                            <constraint firstAttribute="height" constant="100" id="wBZ-hh-9eL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="housestark"/>
+                                        <connections>
+                                            <action selector="starkButtonTapped:" destination="pCU-0L-GbT" eventType="touchUpInside" id="2wm-rF-v32"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmi-8K-2KE">
+                                        <rect key="frame" x="58.5" y="224" width="71" height="21"/>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DCa-xc-HMq" firstAttribute="centerY" secondItem="JJR-v7-Wp3" secondAttribute="centerY" id="DOn-X2-bZC"/>
+                                    <constraint firstItem="DCa-xc-HMq" firstAttribute="centerX" secondItem="JJR-v7-Wp3" secondAttribute="centerX" id="Nna-CL-gGl"/>
+                                    <constraint firstItem="Lmi-8K-2KE" firstAttribute="top" secondItem="DCa-xc-HMq" secondAttribute="bottom" constant="8" symbolic="YES" id="aGg-Cr-ohO"/>
+                                    <constraint firstItem="Lmi-8K-2KE" firstAttribute="centerX" secondItem="DCa-xc-HMq" secondAttribute="centerX" id="oas-dh-GAH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cD-2m-WdT" userLabel="Top Right Container">
+                                <rect key="frame" x="188" y="0.0" width="187" height="333"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61z-R9-MFU">
+                                        <rect key="frame" x="43.5" y="116" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="BwW-mY-FFZ"/>
+                                            <constraint firstAttribute="width" constant="100" id="K7y-lG-CeY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="housetargaryen"/>
+                                        <connections>
+                                            <action selector="targaryenButtonTapped:" destination="pCU-0L-GbT" eventType="touchUpInside" id="9Wl-hB-01n"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Targaryen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eQ-fj-d1q">
+                                        <rect key="frame" x="30.5" y="224" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0eQ-fj-d1q" firstAttribute="top" secondItem="61z-R9-MFU" secondAttribute="bottom" constant="8" symbolic="YES" id="2hG-9A-sLo"/>
+                                    <constraint firstItem="0eQ-fj-d1q" firstAttribute="centerX" secondItem="61z-R9-MFU" secondAttribute="centerX" id="Svj-ml-79X"/>
+                                    <constraint firstItem="61z-R9-MFU" firstAttribute="centerY" secondItem="5cD-2m-WdT" secondAttribute="centerY" id="Zr9-ut-1Wy"/>
+                                    <constraint firstItem="61z-R9-MFU" firstAttribute="centerX" secondItem="5cD-2m-WdT" secondAttribute="centerX" id="rj5-FB-hha"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Os1-PV-hd8" userLabel="Bottom Left Container">
+                                <rect key="frame" x="0.0" y="334" width="187" height="333"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-NO-fpA">
+                                        <rect key="frame" x="43.5" y="116.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Wci-8n-afn"/>
+                                            <constraint firstAttribute="width" constant="100" id="geB-Pp-Jka"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="houselannister"/>
+                                        <connections>
+                                            <action selector="lannisterButtonTapped:" destination="pCU-0L-GbT" eventType="touchUpInside" id="fBS-AL-eoI"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lannister" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-xw-1av">
+                                        <rect key="frame" x="33.5" y="224.5" width="120" height="21"/>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="v5K-NO-fpA" firstAttribute="centerX" secondItem="Os1-PV-hd8" secondAttribute="centerX" id="1UI-x8-Vnc"/>
+                                    <constraint firstItem="v5K-NO-fpA" firstAttribute="centerY" secondItem="Os1-PV-hd8" secondAttribute="centerY" id="2Y8-Gm-mAQ"/>
+                                    <constraint firstItem="AIY-xw-1av" firstAttribute="top" secondItem="v5K-NO-fpA" secondAttribute="bottom" constant="8" symbolic="YES" id="2gq-JV-hFv"/>
+                                    <constraint firstItem="AIY-xw-1av" firstAttribute="centerX" secondItem="v5K-NO-fpA" secondAttribute="centerX" id="fH5-5m-TyC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RyN-qN-ZHi" userLabel="Bottom Right Container">
+                                <rect key="frame" x="188" y="334" width="187" height="333"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nX-Uc-1Pd">
+                                        <rect key="frame" x="43.5" y="116.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1p6-F4-1ih"/>
+                                            <constraint firstAttribute="width" constant="100" id="t07-Rw-su5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="housetully"/>
+                                        <connections>
+                                            <action selector="tullyButtonTapped:" destination="pCU-0L-GbT" eventType="touchUpInside" id="vYV-XI-DwB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tully" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdK-29-NuR">
+                                        <rect key="frame" x="61.5" y="224.5" width="64" height="21"/>
+                                        <fontDescription key="fontDescription" name="GameofThrones" family="Game of Thrones" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gdK-29-NuR" firstAttribute="centerX" secondItem="RyN-qN-ZHi" secondAttribute="centerX" id="3dU-Hx-0bw"/>
+                                    <constraint firstItem="3nX-Uc-1Pd" firstAttribute="centerX" secondItem="RyN-qN-ZHi" secondAttribute="centerX" id="HFf-11-MOX"/>
+                                    <constraint firstItem="gdK-29-NuR" firstAttribute="top" secondItem="3nX-Uc-1Pd" secondAttribute="bottom" constant="8" symbolic="YES" id="OrA-j2-ThO"/>
+                                    <constraint firstItem="3nX-Uc-1Pd" firstAttribute="centerY" secondItem="RyN-qN-ZHi" secondAttribute="centerY" id="Xd9-b1-enV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="top" secondItem="5cD-2m-WdT" secondAttribute="bottom" constant="1" id="3jr-Pl-v0P"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="width" secondItem="JJR-v7-Wp3" secondAttribute="width" id="7I3-0b-wpU"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="top" secondItem="42Z-Iv-ilK" secondAttribute="top" id="8bi-fR-GXy"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="height" secondItem="JJR-v7-Wp3" secondAttribute="height" id="9TB-Ab-xH2"/>
+                            <constraint firstItem="JJR-v7-Wp3" firstAttribute="leading" secondItem="j8f-hp-NA1" secondAttribute="leading" id="ESV-Ff-FAk"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="leading" secondItem="j8f-hp-NA1" secondAttribute="leading" id="FAv-2j-yEi"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="height" secondItem="JJR-v7-Wp3" secondAttribute="height" id="Kyw-UP-HBc"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="bottom" secondItem="j8f-hp-NA1" secondAttribute="bottom" id="NDf-c1-HyF"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="trailing" secondItem="j8f-hp-NA1" secondAttribute="trailing" id="NvJ-De-zGP"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="width" secondItem="JJR-v7-Wp3" secondAttribute="width" id="QCL-b2-86R"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="bottom" secondItem="j8f-hp-NA1" secondAttribute="bottom" id="UeB-bd-qyB"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="top" secondItem="JJR-v7-Wp3" secondAttribute="bottom" constant="1" id="VnY-q0-Rri"/>
+                            <constraint firstItem="Os1-PV-hd8" firstAttribute="top" secondItem="JJR-v7-Wp3" secondAttribute="bottom" constant="1" id="bOs-CR-Djj"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="height" secondItem="JJR-v7-Wp3" secondAttribute="height" id="bVl-Bd-s2H"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="leading" secondItem="JJR-v7-Wp3" secondAttribute="trailing" constant="1" id="bfx-fr-rR1"/>
+                            <constraint firstItem="5cD-2m-WdT" firstAttribute="leading" secondItem="JJR-v7-Wp3" secondAttribute="trailing" constant="1" id="dHb-Ks-WlC"/>
+                            <constraint firstItem="JJR-v7-Wp3" firstAttribute="top" secondItem="42Z-Iv-ilK" secondAttribute="top" id="eOv-cc-ypO"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="width" secondItem="JJR-v7-Wp3" secondAttribute="width" id="h5J-zh-OGf"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="leading" secondItem="Os1-PV-hd8" secondAttribute="trailing" constant="1" id="hNj-BY-D53"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="leading" secondItem="Os1-PV-hd8" secondAttribute="trailing" constant="1" id="l4n-Nd-Aqf"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="top" secondItem="5cD-2m-WdT" secondAttribute="bottom" constant="1" id="oiq-vi-X8J"/>
+                            <constraint firstItem="RyN-qN-ZHi" firstAttribute="trailing" secondItem="j8f-hp-NA1" secondAttribute="trailing" id="vtk-ds-36J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j8f-hp-NA1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ik7-fF-0XT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="houselannister" width="512" height="512"/>
+        <image name="housestark" width="512" height="512"/>
+        <image name="housetargaryen" width="512" height="512"/>
+        <image name="housetully" width="512" height="512"/>
+    </resources>
+</document>
